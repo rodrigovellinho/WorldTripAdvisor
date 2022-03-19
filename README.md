@@ -34,6 +34,7 @@ yarn dev
 - **[Next.js](https://nextjs.org/)**
 - **[TypeScript](https://www.typescriptlang.org/)**
 - **[Swiper](https://swiperjs.com/)**
+- **[Chakra-UI](https://chakra-ui.com/)**
 <br>
 
 ---
