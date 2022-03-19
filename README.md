@@ -1,7 +1,6 @@
 <h3 align="center">
   Bootcamp Ignite Rocketseat - Desafio 07 - Interface com Chakra UI
 </h3>
-
 <br>
 
 ## :rocket: Sobre o desafio
