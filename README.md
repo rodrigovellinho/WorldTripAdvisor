@@ -16,7 +16,7 @@ O objetivo da aplicação é desenvolver toda a interface usando como base o Cha
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-git clone https://github.com/rodrigovellinho/Carrinho-de-Compras.git
+git clone https://github.com/rodrigovellinho/WorldTripAdvisor.git
 # ou use a opção de download.
 
 # Instale as dependências
