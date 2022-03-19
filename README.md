@@ -1,7 +1,6 @@
 <h3 align="center">
   Bootcamp Ignite Rocketseat - Desafio 07 - Interface com Chakra UI
 </h3>
-<br>
 
 ## :rocket: Sobre o desafio
 
@@ -10,7 +9,6 @@
 </p>
 
 O objetivo da aplicação é desenvolver toda a interface usando como base o Chakra UI e também trabalhar o responsivo da aplicação.
-<br>
 
 ## :wrench: Instalação e uso
 
@@ -27,7 +25,6 @@ yarn dev
 
 # Acesse http://localhost:8080 no seu navagador
 ```
-<br>
 
 ## 🔨 Tecnologias:
 
@@ -35,7 +32,6 @@ yarn dev
 - **[TypeScript](https://www.typescriptlang.org/)**
 - **[Swiper](https://swiperjs.com/)**
 - **[Chakra-UI](https://chakra-ui.com/)**
-<br>
 
 ---
 
