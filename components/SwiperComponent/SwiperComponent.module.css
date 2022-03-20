@@ -1,0 +1,42 @@
+.container {
+  position: absolute;
+}
+
+.swiper {
+  position: relative;
+  width: 1240px;
+  height: 450px;
+  left: 100px;
+  top: 979px;
+  text-align: center;
+  color: #dadada;
+}
+
+.text {
+  color: #dadada;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+}
+
+.continentName {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.continenDescription {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* 
+.swiper-button-prev {
+  background-image: url("../../assets/Previous.svg") !important;
+  color: red;
+}
+
+.swiper-button-next {
+  background-image: url("../../assets/Next.svg") !important;
+} */

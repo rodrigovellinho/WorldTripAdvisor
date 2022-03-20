@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Banner from "../components/Banner";
-import ContinentsSlide from "../components/ContinentsSlide";
 import Header from "../components/Header";
 import TravelTypes from "../components/TravelTypes";
 import styles from "../styles/Home.module.css";
+import SwiperComponent from "../components/SwiperComponent";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <br />
         <span>Então escolha o seu continente</span>
       </div>
-      <ContinentsSlide />
+      <SwiperComponent />
     </div>
   );
 };
