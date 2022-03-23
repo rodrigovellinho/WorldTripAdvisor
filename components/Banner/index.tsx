@@ -4,13 +4,16 @@ import Image from "next/image";
 
 function Banner() {
   return (
-    <div className={styles.background}>
-      <div className={styles.spanOne}>
-        <span>5 Continentes, infinitas possibilidades</span>
-      </div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.textContainer}>
+        <span className={styles.spanOne}>
+          5 Continentes, <br />
+          infinitas possibilidades
+        </span>
+        <br />
         <span className={styles.spanTwo}>
-          Chegou a hora de tirar do papel a viagem que você sempre sonhou
+          Chegou a hora de tirar do papel a viagem que você <br />
+          sempre sonhou
         </span>
       </div>
       <div className={styles.airplane}>

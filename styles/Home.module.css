@@ -1,24 +1,23 @@
 .container {
-  width: 1706px;
-  height: 1569px;
+  width: 1440px;
+  height: 1469px;
+  margin: 0 auto;
 }
 
 .divider {
-  position: absolute;
+  margin: 0 auto;
+  margin-top: 60px;
   width: 90px;
   height: 0px;
-  left: 675px;
-  top: 774px;
   background-color: #47585b;
   border: 2px solid #47585b;
 }
 
 .text {
-  position: absolute;
+  margin: 0 auto;
+  margin-top: 60px;
   width: 839px;
   height: 101px;
-  left: 300px;
-  top: 826px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;

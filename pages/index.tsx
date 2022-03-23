@@ -8,7 +8,7 @@ import SwiperComponent from "../components/SwiperComponent";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header botao={"nao"} />
       <Banner />
       <TravelTypes />
       <div className={styles.divider}></div>

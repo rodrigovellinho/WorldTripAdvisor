@@ -1,13 +1,10 @@
 .container {
-  position: absolute;
+  margin-top: 80px;
 }
 
 .swiper {
-  position: relative;
   width: 1240px;
   height: 450px;
-  left: 100px;
-  top: 979px;
   text-align: center;
   color: #dadada;
 }
