@@ -1,12 +1,20 @@
 .container {
   width: 1440px;
-  height: 1469px;
+  height: 1706px;
   margin: 0 auto;
 }
 
 .bioInfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 80px;
+}
+
+.bio {
+  margin-left: 150px;
+}
+
+.information {
+  margin-left: 85px;
 }

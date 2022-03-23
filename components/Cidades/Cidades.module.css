@@ -1,0 +1,25 @@
+.container {
+  width: 1160px;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.text {
+  height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: left;
+  color: #47585b;
+}
+
+.gridContainer {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 45px;
+}

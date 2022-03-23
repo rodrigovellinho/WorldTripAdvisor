@@ -1,0 +1,56 @@
+.container {
+  width: 256px;
+  height: 279px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 186, 8, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerText > span {
+  margin-bottom: 5px;
+}
+
+.city {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #47585b;
+}
+
+.country {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #999999;
+}
+
+.containerImage {
+  width: 256px;
+  height: 173px;
+  background: url("../../assets/Londres.svg");
+  border-radius: 4px 4px 0px 0px;
+}
+
+.elipse {
+  width: 30px;
+  height: 30px;
+  background: url("../../assets/EllipseLondres.svg");
+}
