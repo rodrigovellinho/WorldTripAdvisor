@@ -1,0 +1,42 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "url_image": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
+      "continent_name": "Europa",
+      "continent_description": "O continente mais antigo"
+    },
+    {
+      "id": 2,
+      "url_image": "https://images.unsplash.com/photo-1616832880279-0f4f2de8cb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+      "continent_name": "América do Norte",
+      "continent_description": "O continente mais próspero"
+    },
+
+    {
+      "id": 3,
+      "url_image": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "continent_name": "América do Sul",
+      "continent_description": "O continente do carnaval"
+    },
+    {
+      "id": 4,
+      "url_image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "continent_name": "Ásia",
+      "continent_description": "O continente da religião budista"
+    },
+    {
+      "id": 5,
+      "url_image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
+      "continent_name": "África",
+      "continent_description": "O continente das savanas"
+    },
+    {
+      "id": 6,
+      "url_image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "continent_name": "Oceania",
+      "continent_description": "O continente mais distante"
+    }
+  ],
+  "products": []
+}
