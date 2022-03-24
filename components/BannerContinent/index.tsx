@@ -1,10 +1,19 @@
 import styles from "./BannerContinent.module.css";
 
-function BannerContinent() {
+interface BannerProps {
+  continent: string;
+  image: string;
+}
+
+function BannerContinent({ continent, image }: BannerProps) {
+  const Background = image;
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ backgroundImage: `url(${Background})`, backgroundSize: "cover" }}
+    >
       <div className={styles.spanOne}>
-        <span>Europa</span>
+        <span>{continent}</span>
       </div>
     </div>
   );

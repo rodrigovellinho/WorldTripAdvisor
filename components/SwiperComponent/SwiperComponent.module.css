@@ -9,6 +9,25 @@
   color: #dadada;
 }
 
+.text {
+  color: #dadada;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+}
+
+.continentName {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.continenDescription {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 /* 
 .swiper-button-prev {
   background-image: url("../../assets/Previous.svg") !important;

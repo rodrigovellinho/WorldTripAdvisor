@@ -2,11 +2,10 @@
   width: 1440px;
   height: 500px;
   background: linear-gradient(
-      0deg,
-      rgba(28, 20, 1, 0.35),
-      rgba(28, 20, 1, 0.35)
-    ),
-    url("../../assets/Europa.svg");
+    0deg,
+    rgba(28, 20, 1, 0.35),
+    rgba(28, 20, 1, 0.35)
+  );
   display: flex;
 }
 

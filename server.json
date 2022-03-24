@@ -38,5 +38,60 @@
       "continent_description": "O continente mais distante"
     }
   ],
-  "products": []
+  "continents": [
+    {
+      "continent": "europa",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 30,
+      "continent_languages": 20,
+      "continent_cities": 10,
+      "continent_name": "Europa",
+      "url_image": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80"
+    },
+    {
+      "continent": "america_do_norte",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 35,
+      "continent_languages": 30,
+      "continent_cities": 20,
+      "continent_name": "America do Norte",
+      "url_image": "https://images.unsplash.com/photo-1616832880279-0f4f2de8cb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+    },
+    {
+      "continent": "america_do_sul",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 19,
+      "continent_languages": 10,
+      "continent_cities": 10,
+      "continent_name": "America do Sul",
+      "url_image": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+    },
+    {
+      "continent": "asia",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 13,
+      "continent_languages": 23,
+      "continent_cities": 6,
+      "continent_name": "Ásia",
+      "url_image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+    },
+    {
+      "continent": "africa",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 13,
+      "continent_languages": 16,
+      "continent_cities": 23,
+      "continent_name": "África",
+      "url_image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80"
+    },
+    {
+      "continent": "oceania",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ipsam nam quas sint veritatis minima reprehenderit explicabo voluptate quasi!",
+      "continent_quantity": 3,
+      "continent_languages": 5,
+      "continent_cities": 6,
+      "continent_name": "Oceania",
+      "url_image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    }
+  ]
 }
