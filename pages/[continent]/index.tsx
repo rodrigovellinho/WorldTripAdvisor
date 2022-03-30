@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Info from "../../components/Info/Info";
 import styles from "./ContinentDetails.module.css";
 import { GetStaticProps } from "next";
+import { useState } from "react";
 
 interface ContinentDetailsProps {
   continent: string | string[] | undefined;
@@ -20,7 +21,7 @@ interface ContinentDetailsProps {
 }
 
 function ContinentDetails({ continentFind }: ContinentDetailsProps) {
-  console.log(continentFind.continent);
+  const [showCities, setShowCities] = useState<boolean>(false);
 
   const bio = continentFind.description;
   const info_qnt = continentFind.continent_quantity;
@@ -38,10 +39,16 @@ function ContinentDetails({ continentFind }: ContinentDetailsProps) {
           <Bio bioDescription={bio} />
         </div>
         <div className={styles.information}>
-          <Info quantity={info_qnt} languages={info_lan} cities={info_cities} />
+          <Info
+            quantity={info_qnt}
+            languages={info_lan}
+            cities={info_cities}
+            showCitiesHandle={setShowCities}
+            showCities={showCities}
+          />
         </div>
       </div>
-      <Cidades />
+      {showCities && <Cidades />}
     </div>
   );
 }

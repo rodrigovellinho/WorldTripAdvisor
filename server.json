@@ -93,5 +93,196 @@
       "continent_name": "Oceania",
       "url_image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     }
+  ],
+  "cidades": [
+    {
+      "continent": "europa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "europa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "europa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "europa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "europa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_norte",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_norte",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_norte",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_norte",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_sul",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_sul",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_sul",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "america_do_sul",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "asia",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "asia",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "asia",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "asia",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "asia",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "africa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "africa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "africa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "africa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "africa",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "oceania",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "oceania",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "oceania",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    },
+    {
+      "continent": "oceania",
+      "image": "",
+      "elipse": "",
+      "city": "",
+      "country": ""
+    }
   ]
 }

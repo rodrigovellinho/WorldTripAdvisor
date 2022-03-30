@@ -6,24 +6,35 @@ interface InfoProps {
   quantity: number;
   languages: number;
   cities: number;
+  showCitiesHandle: (showCities: boolean) => void;
+  showCities: boolean;
 }
 
 function Info(props: InfoProps) {
+  const { quantity, languages, cities, showCitiesHandle, showCities } = props;
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <span className={styles.highlight}>{props.cities}</span>
+        <span className={styles.highlight}>{cities}</span>
         <span className={styles.text}>países</span>
       </div>
       <div className={styles.textContainer}>
-        <span className={styles.highlight}>{props.languages}</span>
+        <span className={styles.highlight}>{languages}</span>
         <span className={styles.text}>línguas</span>
       </div>
       <div className={styles.textContainer}>
-        <span className={styles.highlight}>{props.quantity}</span>
+        <span className={styles.highlight}>{quantity}</span>
         <div>
-          <span className={styles.text}>cidades +100</span>
-          <Image className={styles.information} src={Information} alt="info" />
+          <div>
+            <span className={styles.text}>cidades +100</span>
+
+            <Image
+              className={styles.information}
+              src={Information}
+              alt="info"
+              onClick={() => showCitiesHandle(!showCities)}
+            />
+          </div>
         </div>
       </div>
     </div>

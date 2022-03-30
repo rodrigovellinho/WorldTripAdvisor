@@ -19,7 +19,6 @@ interface slideProps {
   continent_name: string;
   continent_description: string;
 }
-
 interface SwiperComponentProps {
   slides: slideProps[];
 }
