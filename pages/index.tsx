@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import TravelTypes from "../components/TravelTypes";
@@ -6,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import SwiperComponent from "../components/SwiperComponent";
 import { useState } from "react";
 import Link from "next/link";
+import { Container } from "@chakra-ui/react";
 
 interface slideProps {
   id: string;
@@ -36,10 +36,8 @@ function Home({ slides, continents }: HomeProps) {
     setSelectContinent(e.target.value);
   };
 
-  console.log(selectContinent);
-
   return (
-    <div className={styles.container}>
+    <Container maxW="container.xl" p={0}>
       <Header botao={"nao"} />
       <Banner />
       <TravelTypes />
@@ -52,7 +50,9 @@ function Home({ slides, continents }: HomeProps) {
       <div className={styles.callToAction}>
         <select onChange={handleChange}>
           {continents.map((continent) => (
-            <option key={continent.continent}>{continent.continent}</option>
+            <option key={continent.continent} value={continent.continent}>
+              {continent.continent_name}
+            </option>
           ))}
         </select>
         <Link href={`/${selectContinent}`} passHref={true}>
@@ -60,7 +60,7 @@ function Home({ slides, continents }: HomeProps) {
         </Link>
       </div>
       <SwiperComponent slides={slides} />
-    </div>
+    </Container>
   );
 }
 

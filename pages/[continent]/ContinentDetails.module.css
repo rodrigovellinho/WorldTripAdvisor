@@ -13,8 +13,10 @@
 
 .bio {
   margin-left: 150px;
+  border: 2px solid red;
 }
 
 .information {
   margin-left: 85px;
+  border: 2px solid blue;
 }

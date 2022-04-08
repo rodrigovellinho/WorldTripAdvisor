@@ -32,7 +32,8 @@ export default function SwiperComponent({ slides }: SwiperComponentProps) {
         className={styles.image}
         src={slide.url_image}
         alt={slide.continent_name}
-        layout="fill"
+        width={1240}
+        height={450}
       />
       <div className={styles.text}>
         <span className={styles.continentName}>{slide.continent_name}</span>
