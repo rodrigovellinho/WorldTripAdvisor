@@ -3,10 +3,10 @@ import Bio from "../../components/Bio/Bio";
 import Cidades from "../../components/Cidades";
 import Header from "../../components/Header";
 import Info from "../../components/Info/Info";
-import styles from "./ContinentDetails.module.css";
+
 import { GetStaticProps } from "next";
 import { useState } from "react";
-import { Container, Box, Flex, HStack } from "@chakra-ui/react";
+import { Container, Box, HStack } from "@chakra-ui/react";
 
 interface SelectedContinent {
   continent: string;
@@ -35,27 +35,26 @@ function ContinentDetails({ continentFind }: ContinentDetailsProps) {
   } = continentFind;
 
   return (
-    <Container w="1440px" h="1706px" centerContent>
+    <Container w="1440px" maxH="1706px" centerContent>
       <Box>
         <Header botao={"sim"} />
         <BannerContinent continent={continent_name} image={url_image} />
-        <Flex mt={20} align="center" justifyContent="flex-start">
-          <HStack>
-            <Box ml="150px">
-              <Bio bioDescription={description} />
-            </Box>
-            <Box ml="150px">
-              <Info
-                quantity={continent_quantity}
-                languages={continent_languages}
-                cities={continent_cities}
-                showCitiesHandle={setShowCities}
-                showCities={showCities}
-              />
-            </Box>
-          </HStack>
-        </Flex>
-        {showCities && <Cidades />}
+
+        <HStack mt={20} justifyContent="flex-start">
+          <Box ml="140px">
+            <Bio bioDescription={description} />
+          </Box>
+          <Box>
+            <Info
+              quantity={continent_quantity}
+              languages={continent_languages}
+              cities={continent_cities}
+              showCitiesHandle={setShowCities}
+              showCities={showCities}
+            />
+          </Box>
+        </HStack>
+        <Box ml="-650px">{showCities && <Cidades />}</Box>
       </Box>
     </Container>
   );

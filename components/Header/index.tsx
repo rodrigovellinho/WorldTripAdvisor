@@ -1,8 +1,8 @@
-import styles from "./Header.module.css";
-import Logo from "../../assets/Logo.svg";
+import Logo from "../../public/assets/Logo.svg";
 import Image from "next/image";
-import Voltar from "../../assets/Voltar.svg";
 import Link from "next/link";
+import { Container, Box, Icon } from "@chakra-ui/react";
+import { ArrowLeftIcon } from "@chakra-ui/icons";
 
 interface HeaderProps {
   botao: string;
@@ -10,20 +10,28 @@ interface HeaderProps {
 
 function Header({ botao }: HeaderProps) {
   return (
-    <div className={styles.container}>
-      <div className={styles.logo}>
+    <Container
+      height="100px"
+      width="100%"
+      filter="drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))"
+    >
+      <Box position="fixed" left="45%" top="30%">
         {botao === "sim" ? (
-          <Link href="/">
-            <a className={styles.link}>
-              <Image src={Voltar} alt="Botão voltar" />
-            </a>
+          <Link href="/" passHref>
+            <Icon
+              as={ArrowLeftIcon}
+              position="fixed"
+              right="150%"
+              top="40%"
+              cursor="pointer"
+            />
           </Link>
         ) : (
           ""
         )}
         <Image src={Logo} alt="Trip Advisor Logo" />
-      </div>
-    </div>
+      </Box>
+    </Container>
   );
 }
 

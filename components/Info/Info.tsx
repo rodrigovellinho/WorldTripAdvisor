@@ -1,7 +1,5 @@
-import styles from "./Info.module.css";
-import Information from "../../assets/Info.svg";
-import Image from "next/image";
-import { Container, Flex, HStack } from "@chakra-ui/react";
+import { Container, HStack, VStack, Text, Icon } from "@chakra-ui/react";
+import { InfoOutlineIcon } from "@chakra-ui/icons";
 
 interface InfoProps {
   quantity: number;
@@ -14,34 +12,87 @@ interface InfoProps {
 function Info(props: InfoProps) {
   const { quantity, languages, cities, showCitiesHandle, showCities } = props;
   return (
-    <Container>
-      <Flex>
-        <HStack align="center" justify="center">
-          <div className={styles.textContainer}>
-            <span className={styles.highlight}>{cities}</span>
-            <span className={styles.text}>países</span>
-          </div>
-          <div className={styles.textContainer}>
-            <span className={styles.highlight}>{languages}</span>
-            <span className={styles.text}>línguas</span>
-          </div>
-          <div className={styles.textContainer}>
-            <span className={styles.highlight}>{quantity}</span>
-            <div>
-              <div>
-                <span className={styles.text}>cidades +100</span>
+    <Container ml="130px" mb="80px">
+      <HStack spacing="60px">
+        <VStack>
+          <Text
+            fontSize="48px"
+            color="#ffba08"
+            fontFamily="Poppins"
+            font-style="normal"
+            fontWeight={600}
+            lineHeight="72px"
+            textAlign="center"
+          >
+            {cities}
+          </Text>
+          <Text
+            fontSize="24px"
+            fontFamily="Poppins"
+            font-style="normal"
+            fontWeight={600}
+            lineHeight="36px"
+            textAlign="center"
+          >
+            países
+          </Text>
+        </VStack>
+        <VStack>
+          <Text
+            fontSize="48px"
+            color="#ffba08"
+            fontFamily="Poppins"
+            font-style="normal"
+            fontWeight={600}
+            lineHeight="72px"
+            textAlign="center"
+          >
+            {languages}
+          </Text>
+          <Text
+            fontSize="24px"
+            fontFamily="Poppins"
+            font-style="normal"
+            fontWeight={600}
+            lineHeight="36px"
+            textAlign="center"
+          >
+            línguas
+          </Text>
+        </VStack>
+        <VStack>
+          <Text
+            fontSize="48px"
+            color="#ffba08"
+            fontFamily="Poppins"
+            font-style="normal"
+            fontWeight={600}
+            lineHeight="72px"
+            textAlign="center"
+          >
+            {quantity}
+          </Text>
+          <HStack>
+            <Text
+              fontSize="24px"
+              fontFamily="Poppins"
+              font-style="normal"
+              fontWeight={600}
+              lineHeight="36px"
+              textAlign="center"
+            >
+              cidades +100
+            </Text>
 
-                <Image
-                  className={styles.information}
-                  src={Information}
-                  alt="info"
-                  onClick={() => showCitiesHandle(!showCities)}
-                />
-              </div>
-            </div>
-          </div>
-        </HStack>
-      </Flex>
+            <Icon
+              as={InfoOutlineIcon}
+              alt="info"
+              cursor="pointer"
+              onClick={() => showCitiesHandle(!showCities)}
+            />
+          </HStack>
+        </VStack>
+      </HStack>
     </Container>
   );
 }

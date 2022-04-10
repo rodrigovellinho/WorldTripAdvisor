@@ -5,7 +5,8 @@ import styles from "../styles/Home.module.css";
 import SwiperComponent from "../components/SwiperComponent";
 import { useState } from "react";
 import Link from "next/link";
-import { Container } from "@chakra-ui/react";
+import { Container, Button } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 interface slideProps {
   id: string;
@@ -37,7 +38,7 @@ function Home({ slides, continents }: HomeProps) {
   };
 
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.xl" p={0} mb={10}>
       <Header botao={"nao"} />
       <Banner />
       <TravelTypes />
@@ -56,7 +57,13 @@ function Home({ slides, continents }: HomeProps) {
           ))}
         </select>
         <Link href={`/${selectContinent}`} passHref={true}>
-          <button>Ir para o Continente</button>
+          <Button
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme="Blue 400"
+            variant="outline"
+          >
+            Ir para o Continente
+          </Button>
         </Link>
       </div>
       <SwiperComponent slides={slides} />

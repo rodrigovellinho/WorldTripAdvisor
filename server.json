@@ -98,112 +98,112 @@
     {
       "continent": "europa",
       "image": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197374.png",
       "city": "Londres",
       "country": "Inglaterra"
     },
     {
       "continent": "europa",
       "image": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197571.png",
       "city": "Berlim",
       "country": "Alemanha"
     },
     {
       "continent": "europa",
       "image": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197583.png",
       "city": "Bruxelas",
       "country": "Belgica"
     },
     {
       "continent": "america_do_norte",
       "image": "https://images.unsplash.com/photo-1616832880279-0f4f2de8cb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197484.png",
       "city": "Nova Iorque",
       "country": "EUA"
     },
     {
       "continent": "america_do_norte",
       "image": "https://images.unsplash.com/photo-1616832880279-0f4f2de8cb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons.flaticon.com/png/512/5372/premium/5372848.png?token=exp=1649618763~hmac=f7d4eb9fd6279bff5582fd4a8c50e8b6",
       "city": "Cidade do México",
       "country": "México"
     },
     {
       "continent": "america_do_norte",
       "image": "https://images.unsplash.com/photo-1616832880279-0f4f2de8cb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197430.png",
       "city": "Toronto",
       "country": "Canada"
     },
     {
       "continent": "america_do_sul",
       "image": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197386.png",
       "city": "Porto Alegre",
       "country": "Brasil"
     },
     {
       "continent": "america_do_sul",
       "image": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197573.png",
       "city": "Buenos Aires",
       "country": "Argentina"
     },
     {
       "continent": "america_do_sul",
       "image": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197599.png",
       "city": "Montevideo",
       "country": "Uruguai"
     },
     {
       "continent": "asia",
       "image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197375.png",
       "city": "Pequim",
       "country": "China"
     },
     {
       "continent": "asia",
       "image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-      "elipse": "",
-      "city": "Arigato",
-      "country": "China"
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197559.png",
+      "city": "Jakarta",
+      "country": "Indonesia"
     },
     {
       "continent": "asia",
       "image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-      "elipse": "",
-      "city": "Sayonara",
-      "country": "China"
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197452.png",
+      "city": "Bangkok",
+      "country": "Thailand"
     },
     {
       "continent": "africa",
       "image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
-      "elipse": "",
-      "city": "Bufalus",
-      "country": "Africa"
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197562.png",
+      "city": "Cape Town",
+      "country": "South Africa"
     },
     {
       "continent": "africa",
       "image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
-      "elipse": "",
-      "city": "Elefantes",
-      "country": "Africa"
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197627.png",
+      "city": "Abuja",
+      "country": "Nigeria"
     },
     {
       "continent": "oceania",
       "image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197507.png",
       "city": "Sidney",
       "country": "Australia"
     },
     {
       "continent": "oceania",
       "image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
-      "elipse": "",
+      "elipse": "https://cdn-icons-png.flaticon.com/512/197/197589.png",
       "city": "Auckland",
       "country": "Nova Zelândia"
     }

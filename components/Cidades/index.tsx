@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CidadeCard from "../CidadeCard";
-import styles from "./Cidades.module.css";
 import { useRouter } from "next/router";
+import { Container, Text, Grid } from "@chakra-ui/react";
 
 interface SelectedCities {
   continent: string;
@@ -36,14 +36,25 @@ function Cidades() {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.text}>Cidades + 100</div>
-      <div className={styles.gridContainer}>
+    <Container width="1160px" height="700px">
+      <Text
+        height="54px"
+        fontFamily="Poppins"
+        fontStyle="normal"
+        fontWeight="500"
+        fontSize="36px"
+        line-height="54px"
+        textAlign="left"
+        color="#47585b"
+      >
+        Cidades + 100
+      </Text>
+      <Grid mt="40px" templateColumns="repeat(4, 1fr)" gap={16}>
         {citiesFind.map((city) => (
           <CidadeCard key={city?.city} {...city} />
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Container>
   );
 }
 
