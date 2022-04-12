@@ -38,7 +38,7 @@ function Home({ slides, continents }: HomeProps) {
   };
 
   return (
-    <Container maxW="container.xl" p={0} mb={10}>
+    <Container maxW="1440px" p={0} mb={10}>
       <Header botao={"nao"} />
       <Banner />
       <TravelTypes />

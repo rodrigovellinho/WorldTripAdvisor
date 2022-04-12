@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 import Image from "next/image";
+import { Box, Text } from "@chakra-ui/react";
 
 interface slideProps {
   id: string;
@@ -35,18 +36,20 @@ export default function SwiperComponent({ slides }: SwiperComponentProps) {
         width={1240}
         height={450}
       />
-      <div className={styles.text}>
-        <span className={styles.continentName}>{slide.continent_name}</span>
+      <Box color="#dadada" position="absolute" top="160px" left="480px">
+        <Text fontWeight="700" fontSize="48px" line-height="72px">
+          {slide.continent_name}
+        </Text>
         <br />
-        <span className={styles.continenDescription}>
+        <Text fontWeight="700" fontSize="24px" line-height="36px">
           {slide.continent_description}
-        </span>
-      </div>
+        </Text>
+      </Box>
     </SwiperSlide>
   ));
 
   return (
-    <div className={styles.container}>
+    <Box mt="50px">
       <Swiper
         navigation={true}
         modules={[Navigation]}
@@ -54,6 +57,6 @@ export default function SwiperComponent({ slides }: SwiperComponentProps) {
       >
         {slidesMap}
       </Swiper>
-    </div>
+    </Box>
   );
 }
