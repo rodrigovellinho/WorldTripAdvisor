@@ -20,6 +20,9 @@ git clone https://github.com/rodrigovellinho/WorldTripAdvisor.git
 # Instale as dependências
 yarn
 
+# Execute o comando para iniciar a Fake API
+json-server --watch server.json
+
 # Rode a aplicação
 yarn dev
 
@@ -32,6 +35,7 @@ yarn dev
 - **[TypeScript](https://www.typescriptlang.org/)**
 - **[Swiper](https://swiperjs.com/)**
 - **[Chakra-UI](https://chakra-ui.com/)**
+- **[Json-Server](https://github.com/typicode/json-server)**
 
 ---
 
