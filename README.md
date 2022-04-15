@@ -8,7 +8,7 @@
   <img src="https://github.com/rodrigovellinho/WorldTripAdvisor/blob/main/public/assets/CapturaTela.jpg" alt="WorldTripAdvisor">
 </p>
 
-O objetivo da aplicação é desenvolver toda a interface usando como base o Chakra UI e também trabalhar o responsivo da aplicação.
+A aplicação é desenvolvida em NextJS e Chakra UI. Tem como objetivo de auxiliar na busca de informações para viagens.
 
 ## :wrench: Instalação e uso
 
