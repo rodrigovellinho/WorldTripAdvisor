@@ -5,7 +5,7 @@
 ## :rocket: Sobre o desafio
 
 <p align="center">
-  <img src="https://github.com/rodrigovellinho/WorldTripAdvisor/blob/main/public/assets/CapturaTela.jpgg" alt="WorldTripAdvisor">
+  <img src="https://github.com/rodrigovellinho/WorldTripAdvisor/blob/main/public/assets/CapturaTela.jpg" alt="WorldTripAdvisor">
 </p>
 
 O objetivo da aplicação é desenvolver toda a interface usando como base o Chakra UI e também trabalhar o responsivo da aplicação.
