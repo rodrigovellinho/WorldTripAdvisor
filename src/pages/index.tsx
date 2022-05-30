@@ -1,12 +1,11 @@
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import TravelTypes from "../components/TravelTypes";
-import styles from "../styles/Home.module.css";
 import SwiperComponent from "../components/SwiperComponent";
 import { useState } from "react";
-import Link from "next/link";
-import { Container, Button } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import Divider from "../components/Divider";
 
 interface slideProps {
   id: string;
@@ -38,36 +37,22 @@ function Home({ slides, continents }: HomeProps) {
   };
 
   return (
-    <Container maxW="1440px" p={0} mb={10}>
-      <Header botao={"nao"} />
+    <Flex direction="column">
+      <Header />
       <Banner />
       <TravelTypes />
-      <div className={styles.divider}></div>
-      <div className={styles.text}>
-        <span>Vamos nessa?</span>
-        <br />
-        <span>Então escolha o seu continente</span>
-      </div>
-      <div className={styles.callToAction}>
-        <select onChange={handleChange}>
-          {continents.map((continent) => (
-            <option key={continent.continent} value={continent.continent}>
-              {continent.continent_name}
-            </option>
-          ))}
-        </select>
-        <Link href={`/${selectContinent}`} passHref={true}>
-          <Button
-            rightIcon={<ArrowForwardIcon />}
-            colorScheme="Blue 400"
-            variant="outline"
-          >
-            Ir para o Continente
-          </Button>
-        </Link>
-      </div>
-      <SwiperComponent slides={slides} />
-    </Container>
+      <Divider />
+      <Heading
+        textAlign="center"
+        fontWeight="500"
+        mb={["5", "14"]}
+        fontSize={["lg", "3xl", "4xl"]}
+      >
+        Vamos nessa? <br />
+        Então escolha o seu continente
+      </Heading>
+      <SwiperComponent />
+    </Flex>
   );
 }
 

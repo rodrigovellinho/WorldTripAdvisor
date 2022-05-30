@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CidadeCard from "../CidadeCard";
 import { useRouter } from "next/router";
-import { Container, Text, Grid } from "@chakra-ui/react";
+import { Grid, Heading, GridItem } from "@chakra-ui/react";
 
 interface SelectedCities {
   continent: string;
@@ -12,6 +12,23 @@ interface SelectedCities {
 }
 
 function Cidades() {
+  return (
+    <>
+      <Heading fontWeight="500" fontSize={["2xl", "4xl"]} mb="10">
+        Cidades +100
+      </Heading>
+      <Grid
+        templateColumns={["1fr", "1fr 1fr", "repeat(3, 1fr)", "repeat(4, 1fr)"]}
+        gap={["20px", "45px"]}
+        alignItems="center"
+        justifyContent="center"
+        px={["30px", 0]}
+      ></Grid>
+    </>
+  );
+}
+
+/* function Cidades() {
   const [cities, setCities] = useState<SelectedCities[]>([]);
   const [isLoading, setLoading] = useState(false);
 
@@ -57,5 +74,5 @@ function Cidades() {
     </Container>
   );
 }
-
+ */
 export default Cidades;

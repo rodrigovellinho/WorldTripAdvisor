@@ -2,11 +2,8 @@ import BannerContinent from "../../components/BannerContinent";
 import Bio from "../../components/Bio/Bio";
 import Cidades from "../../components/Cidades";
 import Header from "../../components/Header";
-import Info from "../../components/Info/Info";
-
 import { GetStaticProps } from "next";
-import { useState } from "react";
-import { Container, Box, HStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 interface SelectedContinent {
   continent: string;
@@ -22,8 +19,8 @@ interface ContinentDetailsProps {
   continentFind: SelectedContinent;
 }
 
-function ContinentDetails({ continentFind }: ContinentDetailsProps) {
-  const [showCities, setShowCities] = useState<boolean>(false);
+function ContinentDetails(/* { continentFind }: ContinentDetailsProps */) {
+  /*   const [showCities, setShowCities] = useState<boolean>(false);
 
   const {
     description,
@@ -32,35 +29,21 @@ function ContinentDetails({ continentFind }: ContinentDetailsProps) {
     continent_cities,
     continent_name,
     url_image,
-  } = continentFind;
+  } = continentFind; */
 
   return (
-    <Container w="1440px" maxH="1706px" centerContent>
-      <Box>
-        <Header botao={"sim"} />
-        <BannerContinent continent={continent_name} image={url_image} />
-
-        <HStack mt={20} justifyContent="flex-start">
-          <Box ml="140px">
-            <Bio bioDescription={description} />
-          </Box>
-          <Box>
-            <Info
-              quantity={continent_quantity}
-              languages={continent_languages}
-              cities={continent_cities}
-              showCitiesHandle={setShowCities}
-              showCities={showCities}
-            />
-          </Box>
-        </HStack>
-        <Box ml="-650px">{showCities && <Cidades />}</Box>
-      </Box>
-    </Container>
+    <Flex direction="column">
+      <Header />
+      <BannerContinent /* continent={continent_name} image={url_image} */ />
+      <Flex direction="column" maxW="1160px" mx="auto" mb="10" px="1rem">
+        <Bio />
+        <Cidades />
+      </Flex>
+    </Flex>
   );
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const res = await fetch("http://localhost:3000/continents");
   const res_json: SelectedContinent[] = await res.json();
 
@@ -90,5 +73,30 @@ export const getStaticProps: GetStaticProps = async (context) => {
     },
   };
 };
-
+ */
 export default ContinentDetails;
+
+/* 
+
+ <Container w="1440px" maxH="1706px" centerContent>
+      <Box>
+        <Header botao={"sim"} />
+      
+
+        <HStack mt={20} justifyContent="flex-start">
+          <Box ml="140px">
+            <Bio bioDescription={description} />
+          </Box>
+          <Box>
+            <Info
+              quantity={continent_quantity}
+              languages={continent_languages}
+              cities={continent_cities}
+              showCitiesHandle={setShowCities}
+              showCities={showCities}
+            />
+          </Box>
+        </HStack>
+        <Box ml="-650px">{showCities && <Cidades />}</Box>
+      </Box>
+    </Container>*/
