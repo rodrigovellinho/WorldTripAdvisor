@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import CidadeCard from "../CidadeCard";
 import { useRouter } from "next/router";
-import { Grid, Heading, GridItem } from "@chakra-ui/react";
+import { Grid, Heading } from "@chakra-ui/react";
 
-interface SelectedCities {
+/* interface SelectedCities {
   continent: string;
   image: string;
   elipse: string;
   city: string;
   country: string;
 }
-
+ */
 function Cidades() {
   return (
     <>
@@ -23,7 +23,13 @@ function Cidades() {
         alignItems="center"
         justifyContent="center"
         px={["30px", 0]}
-      ></Grid>
+      >
+        <CidadeCard />
+        <CidadeCard />
+        <CidadeCard />
+        <CidadeCard />
+        <CidadeCard />
+      </Grid>
     </>
   );
 }

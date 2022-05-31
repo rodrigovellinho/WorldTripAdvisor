@@ -1,0 +1,106 @@
+{
+  "id": "23ed1e53-782f-42ff-8788-2d6d2272ae9d",
+  "uid": "rerum-illum-quia",
+  "type": "continentes",
+  "data": {
+    "title": "benchmark rich synergies",
+    "summary": "integrate strategic blockchains",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Aute fugiat ad ipsum sunt consectetur labore tempor.",
+        "spans": []
+      }
+    ],
+    "sliderImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+    },
+    "bannerImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+    },
+    "country": 5256,
+    "languages": 4150,
+    "cities": 2011,
+    "citiesList": "recontextualize plug-and-play architectures",
+    "cities100": [
+      {
+        "Thumbnail": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+        },
+        "flag": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        },
+        "city": "grow dot-com supply-chains",
+        "country": "iterate front-end applications"
+      },
+      {
+        "Thumbnail": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+        },
+        "flag": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        },
+        "city": "harness collaborative solutions",
+        "country": "streamline frictionless portals"
+      },
+      {
+        "Thumbnail": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        },
+        "flag": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+        },
+        "city": "facilitate bricks-and-clicks supply-chains",
+        "country": "engage seamless platforms"
+      }
+    ]
+  }
+}

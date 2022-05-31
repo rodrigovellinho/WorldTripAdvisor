@@ -2,40 +2,21 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import TravelTypes from "../components/TravelTypes";
 import SwiperComponent from "../components/SwiperComponent";
-import { useState } from "react";
 import { Flex, Heading } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Divider from "../components/Divider";
+import { getPrismicClient } from "../services/prismic";
+import Prismic from "@prismicio/client";
 
-interface slideProps {
-  id: string;
-  url_image: string;
-  continent_name: string;
-  continent_description: string;
+export interface ContinenteProps {
+  continentes: {
+    slug: string;
+    title: string;
+    summary: string;
+    image: string;
+  }[];
 }
 
-interface continentProps {
-  continent: string;
-  description: string;
-  continent_quantity: string;
-  continent_languages: string;
-  continent_cities: string;
-  continent_name: string;
-  url_image: string;
-}
-
-interface HomeProps {
-  slides: slideProps[];
-  continents: continentProps[];
-}
-
-function Home({ slides, continents }: HomeProps) {
-  const [selectContinent, setSelectContinent] = useState("europa");
-
-  const handleChange = (e: React.ChangeEvent<any>) => {
-    setSelectContinent(e.target.value);
-  };
-
+function Home({ continentes }: ContinenteProps) {
   return (
     <Flex direction="column">
       <Header />
@@ -51,7 +32,7 @@ function Home({ slides, continents }: HomeProps) {
         Vamos nessa? <br />
         Então escolha o seu continente
       </Heading>
-      <SwiperComponent />
+      <SwiperComponent continentes={continentes} />
     </Flex>
   );
 }
@@ -59,15 +40,24 @@ function Home({ slides, continents }: HomeProps) {
 export default Home;
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/slides");
-  const slides = await res.json();
+  const prismic = getPrismicClient();
+  const response = await prismic.query([
+    Prismic.Predicates.at("document.type", "continentes"),
+  ]);
 
-  const res2 = await fetch("http://localhost:3000/continents");
-  const continents = await res2.json();
+  const continentes = response.results.map((continent) => {
+    return {
+      slug: continent.uid,
+      title: continent.data.title,
+      summary: continent.data.summary,
+      image: continent.data.slider_image.url,
+    };
+  });
+
   return {
     props: {
-      slides,
-      continents,
+      continentes,
     },
+    revalidate: 18000,
   };
 }
