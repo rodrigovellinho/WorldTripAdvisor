@@ -1,102 +1,100 @@
 import BannerContinent from "../../components/BannerContinent";
-import Bio from "../../components/Bio/Bio";
+import Bio from "../../components/Bio";
 import Cidades from "../../components/Cidades";
 import Header from "../../components/Header";
 import { GetStaticProps } from "next";
 import { Flex } from "@chakra-ui/react";
+import Prismic from "@prismicio/client";
+import { getPrismicClient } from "../../services/prismic";
+import { RichText } from "prismic-dom";
+import Loading from "../../components/Loading";
+import { useRouter } from "next/router";
 
-interface SelectedContinent {
-  continent: string;
-  description: string;
-  continent_quantity: number;
-  continent_languages: number;
-  continent_cities: number;
-  continent_name: string;
-  url_image: string;
+export interface ContinentProps {
+  continent: {
+    slug: string;
+    title: string;
+    description: string;
+    banner_image: string;
+    countries: number;
+    languages: number;
+    cities: number;
+    cities_list: string;
+    cities100: {
+      city: string;
+      country: string;
+      thumbnail: string;
+      flag: string;
+    }[];
+  };
 }
 
-interface ContinentDetailsProps {
-  continentFind: SelectedContinent;
-}
-
-function ContinentDetails(/* { continentFind }: ContinentDetailsProps */) {
-  /*   const [showCities, setShowCities] = useState<boolean>(false);
-
-  const {
-    description,
-    continent_quantity,
-    continent_languages,
-    continent_cities,
-    continent_name,
-    url_image,
-  } = continentFind; */
-
+function ContinentDetails({ continent }: ContinentProps) {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <Loading />;
+  }
   return (
     <Flex direction="column">
       <Header />
-      <BannerContinent /* continent={continent_name} image={url_image} */ />
+      <BannerContinent continent={continent} />
       <Flex direction="column" maxW="1160px" mx="auto" mb="10" px="1rem">
-        <Bio />
-        <Cidades />
+        <Bio continent={continent} />
+        <Cidades continent={continent} />
       </Flex>
     </Flex>
   );
 }
 
-/* export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3000/continents");
-  const res_json: SelectedContinent[] = await res.json();
+export async function getStaticPaths() {
+  const prismic = getPrismicClient();
+  const continentes = await prismic.query([
+    Prismic.Predicates.at("document.type", "continentes"),
+  ]);
 
-  const paths = res_json.map((continent) => ({
-    params: { continent: continent.continent },
-  }));
+  const paths = continentes.results.map((continent) => {
+    return {
+      params: {
+        slug: continent.uid,
+      },
+    };
+  });
 
   return {
-    fallback: false,
-    paths: paths,
+    fallback: true,
+    paths,
   };
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch("http://localhost:3000/continents");
-  const res_json: SelectedContinent[] = await res.json();
+  const prismic = getPrismicClient();
+  const slug = context.params;
+  const response = await prismic.getByUID("continent", String(slug), {});
 
-  const continentParams = context.params?.continent;
-
-  let continentFind = res_json.find(
-    (selectContinent) => selectContinent.continent === continentParams
-  );
+  const continent = {
+    slug: response.uid,
+    title: response.data.title,
+    description: RichText.asText(response.data.description),
+    banner_image: response.data.banner_image.url,
+    countries: response.data.countries,
+    languages: response.data.languages,
+    cities: response.data.cities,
+    cities_list: response.data.cities_list,
+    cities100: response.data.cities100.map((city: any) => {
+      return {
+        city: city.city,
+        country: city.country,
+        thumbnail: city.thumbnail.url,
+        flag: city.flag.url,
+      };
+    }),
+  };
 
   return {
     props: {
-      continentFind,
+      continent,
     },
+    revalidate: 1800,
   };
 };
- */
 export default ContinentDetails;
-
-/* 
-
- <Container w="1440px" maxH="1706px" centerContent>
-      <Box>
-        <Header botao={"sim"} />
-      
-
-        <HStack mt={20} justifyContent="flex-start">
-          <Box ml="140px">
-            <Bio bioDescription={description} />
-          </Box>
-          <Box>
-            <Info
-              quantity={continent_quantity}
-              languages={continent_languages}
-              cities={continent_cities}
-              showCitiesHandle={setShowCities}
-              showCities={showCities}
-            />
-          </Box>
-        </HStack>
-        <Box ml="-650px">{showCities && <Cidades />}</Box>
-      </Box>
-    </Container>*/

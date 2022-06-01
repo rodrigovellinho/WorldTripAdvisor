@@ -3,10 +3,6 @@ import { Flex, Grid, Icon, Image } from "@chakra-ui/react";
 import { ArrowLeftIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 
-interface HeaderProps {
-  botao: string;
-}
-
 function Header() {
   const { asPath } = useRouter();
   const notHomePage = asPath !== "/";

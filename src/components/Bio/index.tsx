@@ -12,12 +12,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
+import { ContinentProps } from "../../pages/continent/[slug]";
 
-interface BioProps {
-  bioDescription: string;
-}
-
-function Bio(/* { bioDescription }: BioProps */) {
+function Bio({ continent }: ContinentProps) {
   return (
     <Grid
       templateColumns={["1fr", "1fr", "1fr 1fr", "1.2fr 1fr"]}
@@ -29,9 +26,7 @@ function Bio(/* { bioDescription }: BioProps */) {
         color="gray.700"
         textAlign="justify"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat
-        quisquam eveniet optio est necessitatibus, quod debitis. Sed, maxime
-        modi?
+        {continent.description}
       </Text>
       <Flex align="center" justifyContent="space-between">
         <Flex
@@ -44,7 +39,7 @@ function Bio(/* { bioDescription }: BioProps */) {
             color="yellow.400"
             fontWeight="500"
           >
-            50
+            {continent.countries}
           </Heading>
           <Text fontWeight="500" color="gray.600" fontSize={["md", "xl"]}>
             países
@@ -60,7 +55,7 @@ function Bio(/* { bioDescription }: BioProps */) {
             color="yellow.400"
             fontWeight="500"
           >
-            60
+            {continent.languages}
           </Heading>
           <Text fontWeight="500" color="gray.600" fontSize={["md", "xl"]}>
             línguas
@@ -76,7 +71,7 @@ function Bio(/* { bioDescription }: BioProps */) {
             color="yellow.400"
             fontWeight="500"
           >
-            27
+            {continent.cities}
           </Heading>
           <Text fontWeight="500" color="gray.600" fontSize={["md", "xl"]}>
             cidades +100
@@ -97,7 +92,7 @@ function Bio(/* { bioDescription }: BioProps */) {
                 <PopoverArrow bg="gray.700" />
                 <PopoverCloseButton />
                 <PopoverBody fontWeight="400" fontSize="lg">
-                  Lorem ipsum dolor sit amet.
+                  {continent.cities_list}
                 </PopoverBody>
               </PopoverContent>
             </Popover>
