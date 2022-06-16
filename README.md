@@ -35,7 +35,7 @@ yarn dev
 - **[TypeScript](https://www.typescriptlang.org/)**
 - **[Swiper](https://swiperjs.com/)**
 - **[Chakra-UI](https://chakra-ui.com/)**
-- **[Json-Server](https://github.com/typicode/json-server)**
+- **[Prismic](https://prismic.io/)**
 
 ---
 
